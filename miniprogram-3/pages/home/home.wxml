@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<smallTilte title="{{titles}}" bind:itemChange="onItemChange"></smallTilte>
+<view wx:if="{{selectPage == 0}}">
+    <recommend></recommend>
+</view>
+<view wx:elif="{{selectPage == 1}}">
+    <category></category>
+</view>
+<view wx:elif="{{selectPage == 2}}">最新页面</view>
+<view wx:else="{{selectPage == 3}}">
+    <album></album>
+</view>

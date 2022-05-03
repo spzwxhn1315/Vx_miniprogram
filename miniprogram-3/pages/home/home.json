@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "smallTilte":"/components/smallTilte/smallTilte",
+    "category":"/components/category/category",
+    "recommend":"/components/recommend/recommend",
+    "album":"/components/album/album"
+  }
+}

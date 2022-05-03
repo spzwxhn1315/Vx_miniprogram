@@ -1,0 +1,30 @@
+<!--components/recommend/recommend.wxml-->
+<scroll-view scroll-y="true" class="sy" bind:scrolltolower = "loadMore" >
+    <view class="flex">
+        <image wx:for="{{coverImgList}}" wx:key="_id" 
+        src="{{'http://118.190.104.39:3000/' + item.thumb}}" 
+        class="flex-img"
+        mode="aspectFill"
+        ></image>
+    </view>
+
+    <view class="month-title">
+        <view>{{monthDate}}</view>
+        <view>{{monthData.title}}</view>
+        <view>更多></view>
+    </view>
+
+    <view class="month-box">
+        <image class="month-img" wx:for="{{monthData.list}}" wx:key="_id" 
+        src="{{'http://118.190.104.39:3000/' + item.thumb}}"
+        mode="aspectFill"></image>
+    </view>
+
+    <view class="hot">|热门</view>
+
+    <view class="hot-box">
+        <image class="hot-img" wx:for="{{hotImgs}}" wx:key="_id" 
+        src="{{'http://118.190.104.39:3000/' + item.thumb}}"
+        mode="aspectFill"></image>
+    </view>
+</scroll-view>

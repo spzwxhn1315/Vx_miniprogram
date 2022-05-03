@@ -1,0 +1,33 @@
+/* components/recommend/recommend.wxss */
+.sy{
+  height: 844px;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-img{
+  width: 50vw;
+  border: 3px solid white;
+  box-sizing: border-box;
+  height: 100px;
+}
+.month-title{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #ff69B4;
+}
+.hot-box, .month-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-img, .month-img{
+  width: 33.33vw;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.hot{
+  color: #ff69B4;
+  margin: 2px;
+}

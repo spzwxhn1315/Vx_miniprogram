@@ -1,0 +1,13 @@
+<!--components/category/category.wxml-->
+<view class="flex">
+    <view 
+        class="father"  wx:for="{{categoryImgs}}" wx:key="_id"
+        bindtap="imgClick" data-imgId="{{item.id}}">
+        <image 
+            class="img" 
+            mode="aspectFill"
+            src="{{'http://118.190.104.39:3000/' + item.cover}}"
+        ></image>
+        <view class="son">{{item.name}}</view>
+    </view>
+</view>

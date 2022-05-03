@@ -1,0 +1,32 @@
+{
+    "setting": {
+        "compileHotReLoad": false
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/cateDetail/cateDetail",
+                    "pathName": "pages/cateDetail/cateDetail",
+                    "query": "cid=4e4d610cdf714d2966000000",
+                    "scene": null
+                },
+                {
+                    "name": "pages/cateDetail/cateDetail",
+                    "pathName": "pages/cateDetail/cateDetail",
+                    "query": "cid=4fb479f75ba1c65561000027",
+                    "scene": null
+                },
+                {
+                    "name": "pages/cateDetail/cateDetail",
+                    "pathName": "pages/cateDetail/cateDetail",
+                    "query": "cid=4e4d610cdf714d2966000000",
+                    "scene": null
+                }
+            ]
+        }
+    },
+    "projectname": "miniprogram-3",
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "libVersion": "2.24.1"
+}

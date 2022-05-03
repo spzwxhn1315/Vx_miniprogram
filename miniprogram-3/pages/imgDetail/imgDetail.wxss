@@ -1,0 +1,5 @@
+/* pages/imgDetail/imgDetail.wxss */
+.img{
+  display: block;
+  margin: 15px auto;
+}

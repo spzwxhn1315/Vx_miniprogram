@@ -1,0 +1,19 @@
+<!--components/album/album.wxml-->
+<scroll-view class="album" scroll-y enable-flex bindscrolltolower="scrolltolower">
+    <view bindtap="goAlbumDetail" class="album_item" wx:for="{{ list }}" wx:key="_id" data-index="{{index}}">
+  <!-- 文字 -->
+  <view class="txtbox">
+    <view class="txt_name">{{item.name}}</view>
+    <view class="txt_num">共{{item.count}}张</view>
+  </view>
+  <!-- 大图 -->
+  <view class="banner">
+    <image class="my_img" mode="aspectFill" src="{{baseUrl + item.cover}}"></image>
+  </view>
+  <!-- 小图 -->
+  <view class="imgs_box">
+      <image class="img" wx:for="{{item.imgs}}" wx:key="*this" wx:for-item="img" mode="aspectFill" src="{{baseUrl + img}}"></image>
+  </view>
+</view>
+</scroll-view>
+

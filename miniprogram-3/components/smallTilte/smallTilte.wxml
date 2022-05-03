@@ -1,0 +1,7 @@
+<!--pages/components/homeTitle/homeTitle.wxml-->
+<view class="flx">
+    <view 
+    wx:for="{{title}}" wx:key="id" class="{{index == currNum ? 'flx-item select' : 'flx-item '}}"
+    bindtap="titleClick" data-index="{{index}}"
+    >{{item.name}}</view>
+</view>

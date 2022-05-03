@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/img/img",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/video/video",
+    "pages/cateDetail/cateDetail",
+    "pages/imgDetail/imgDetail",
+    "pages/albumDetail/albumDetail"
+  ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff69B4",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "/icons/_home.png",
+      "selectedIconPath": "/icons/home.png"
+    },
+
+    {"pagePath": "pages/img/img",
+      "text": "照片",
+      "iconPath": "/icons/_img.png",
+      "selectedIconPath": "/icons/img.png"
+    },
+
+    {"pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/icons/_my.png",
+      "selectedIconPath": "/icons/my.png"
+    },
+
+    {"pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "/icons/_search.png",
+      "selectedIconPath": "/icons/search.png"
+    },
+
+    {"pagePath": "pages/video/video",
+      "text": "视频",
+      "iconPath": "/icons/_videocamera.png",
+      "selectedIconPath": "/icons/videocamera.png"
+    }
+  ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff69B4",
+    "navigationBarTitleText": "懂你找图",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

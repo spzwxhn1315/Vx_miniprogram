@@ -1,0 +1,11 @@
+/* pages/components/homeTitle/homeTitle.wxss */
+.flx{
+  display: flex;
+  justify-content: space-around;
+}
+.flx-item{
+  padding: 3px;
+}
+.select{
+  border-bottom: 3px solid #ff69B4;
+}

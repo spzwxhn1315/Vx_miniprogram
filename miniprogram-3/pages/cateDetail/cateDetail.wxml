@@ -1,0 +1,20 @@
+<!--pages/cateDetail/cateDetail.wxml-->
+<scroll-view scroll-y="true" class="sy">
+  <smallTilte 
+    title = "{{titles}}"
+    bind:itemChange = "onCateClick"
+  ></smallTilte>
+  <view class="flx">
+    <image wx:for="{{imgList}}" wx:key="_id"
+      class="img"
+      mode="aspectFill"
+      bindtap="imgClick"
+      data-imgName="{{item.thumb}}"
+      src="{{'http://118.190.104.39:3000/' + item.thumb}}"></image>
+    <!-- cateClick是什么？ 没有设置监听cateClick就不存在 -->
+    <!-- itemChange是在smallTilte设置，用来监听的 -->
+  </view>
+</scroll-view>
+
+
+<button   bind:tap="btnClick"  ></button>

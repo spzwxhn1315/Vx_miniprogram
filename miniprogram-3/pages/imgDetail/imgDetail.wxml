@@ -1,0 +1,6 @@
+<!--pages/imgDetail/imgDetail.wxml-->
+<image src="{{'http://118.190.104.39:3000/' + imgname}}"
+  mode="aspectFill"
+  class="img"
+></image>
+<button bindtap="downlownClick">下载</button>

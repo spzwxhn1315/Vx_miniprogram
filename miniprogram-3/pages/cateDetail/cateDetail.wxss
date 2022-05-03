@@ -1,0 +1,14 @@
+/* pages/cateDetail/cateDetail.wxss */
+.flx{
+  display: flex;
+  flex-wrap: wrap;
+}
+.img{
+  width: 33.33vw;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+.sy{
+  /* 100vh是屏幕高度 */
+  height: 93vh;
+}

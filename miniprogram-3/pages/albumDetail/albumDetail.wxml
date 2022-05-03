@@ -1,0 +1,25 @@
+<!--
+  页面优化：使用wx:if="{{album.user}}" --- 解决网络层渲染报错
+-->
+<view class="album_detail" wx:if="{{album.user}}">
+    <!--banner轮播图部分-->
+    <view class="banner">
+        <swiper autoplay indicator-dots circular>
+            <swiper-item wx:for="{{album.imgs}}" wx:key="*this">
+                <image class="my_img" mode="aspectFill" src="{{ baseURL+ item }}"></image>
+            </swiper-item>
+        </swiper>
+        <view class="title">{{ album.name }}</view>
+    </view>
+    <!--用户名称+头像-->
+    <view class="user">
+        <image class="author_i" src="{{ baseURL+album.user.avatar}}"></image>
+        <view>{{ album.user.name }}</view>
+    </view>
+    <!--列表结构-->
+    <view class="album_list">
+        <navigator url="{{'/pages/picture/picture?src='+baseURL+ item.thumb}}" class="album_item" wx:for="{{ list }}" wx:key="_id">
+            <image mode="aspectFill" src="{{ baseURL+ item.thumb }}"></image>
+        </navigator>
+    </view>
+</view>
